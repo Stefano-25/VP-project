@@ -56,18 +56,21 @@ def main():
     # Extract the video inside cap and read the first two frames
     cap = cv2.VideoCapture(path_to_video)
     ret, old_frame = cap.read()
+    if not ret:
+        print('No frames grabbed!')
+        return
 
     # Detect the face
     face1 = detect_face(old_frame)
 
-    while(1):
+    while(cap.isOpened()):
         
+        ret, new_frame = cap.read()
         if not ret:
-            print('No frames grabbed!')
+            print('The video is finished!')
             break
         
         # Read new frame and detect the face
-        ret, new_frame = cap.read()
         face2 = detect_face(new_frame)
         
         # Resize the two crops to have the same input dimension in optical flow function
