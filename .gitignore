@@ -1,3 +1,7 @@
 VP-project
 video.py
 immagini
+dataset/train/
+dataset/val/
+dataset/data/
+dataset/__pycache__/
