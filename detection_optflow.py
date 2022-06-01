@@ -1,6 +1,5 @@
 # Dato il dataset FaceForensics++, voglio calcolare l'optical flow di un video casuale del dataset. Quello che intendo fare è prendere il video, 
 # dividerlo in frame, rilevare i volti, tagliare i volti e poi dare in ingresso due frame successivi al mio sistema che calcola l'OF   
-import torch
 import numpy as np
 import cv2
 import os
