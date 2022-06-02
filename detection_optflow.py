@@ -6,8 +6,6 @@ import os
 import random
 
 
-
-
 def detect_face(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt2.xml')
@@ -19,7 +17,7 @@ def detect_face(img):
     if (len(faces) == 0):
         return None
     
-    return gray[y:y + w, x:x + h]
+    return gray[y - 40:y + w  + 40, x - 40 :x + h + 40]
 
 
 def compute_optical_flow(prvs, nxt):
@@ -77,7 +75,9 @@ def main():
         face2 = cv2.resize(face2, (300, 300), interpolation = cv2.INTER_AREA)
 
         # Compute the optical flow
-        optical_flow = compute_optical_flow(face1, face2)
+        optical_flow = compute_optical_flow(face1, face2) 
+        # This is an nparray.ndarray, with dtype uint8 and shape (300, 300, 3)
+        # When we load the data we need to transform to Tensor.
 
         # Display frames and optical flow
         cv2.imshow("optical flow", optical_flow)
