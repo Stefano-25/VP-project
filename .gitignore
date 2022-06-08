@@ -1,8 +1,5 @@
 VP-project
-video.py
 dataset/train/
 dataset/val/
 dataset/data/
 dataset/__pycache__/
-image-classification.py
-ilsvrc2012_wordnet_lemmas.txt
