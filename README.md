@@ -14,3 +14,4 @@ Once the video to be checked has been chosen, it is passed to our program which 
 
 # Program
 In the repository you can find the notebook containing everything you need to complete the task.
+You have only add your credentials of Kaggle to download the FaceForensic repository and our repository to test 2 casual videos.
