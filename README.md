@@ -18,4 +18,5 @@ The model will return its prediction for each pair of frames and, after combinin
 # Everything you need to run the program
 You can find all the code in the notebook and you can run the progam in your machine or, as we did, run the program in Google Colab.
 The only thing to do is to create an account on [KAGGLE](https://www.kaggle.com/) site, if it has not already been created, and put your username and API key in the third code box. (You can find your username and API key on your account page on kaggle).
+
 It is **NECESSARY** to donwload the FaceForensics dataset for the training and validation, and our dataset with two videos for the final test, one fake and one original.
