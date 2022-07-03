@@ -14,9 +14,9 @@ The solution we propose is the following:
 
 Once the video to be checked has been chosen, it is passed to our program which divides the video into frames and calculates the optical flow. 
 
-All the optical flows are given as input to the model, composed by a pre-trained resnet18 model and a classifier trained for our purpose. 
+All the optical flows are given as input to the model, composed by a pre-trained resnet18 model and a classifier trained for our purpose with optical flow and bgr frames. 
 
-The model will return its prediction for each pair of frames and, after combining all the results, the program will show the percentage of the video it considers fake.
+The model will return its prediction for each pair of frames and, after combining all the results, it will show the percentage of the video it considers fake.
 
 ![schema](/schema.png)
 
