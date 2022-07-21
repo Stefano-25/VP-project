@@ -18,8 +18,6 @@ All the optical flows, fused with the RGB frames, are given as input to the mode
 
 The model will return its softmax prediction for each pair of frames and, after combining all softmax, it will show the percentage of the video it considers fake.
 
-![schema](/schema.png)
-
 # Everything you need to run the program
 You can find all the code in the notebook and you can run the program in your machine or, as we did, run the program in Google Colab.
 
